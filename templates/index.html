@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hack-a-thorn</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
 </head>
 <body>
     <h1>Hack-a-thorn (WIP Title)</h1>
@@ -17,14 +17,21 @@
         ><img src="../static/city_img5.jpg" alt="city image 5">
     </div>
     <form method="post">
-        <label for="name">Enter a review:</label><br>
+        <label for="text">Enter a review:</label><br>
         <div id="input-box">
-            <input type="text" id="name" name="name" autocomplete="off"
-            ><div class="button">
+            <input type="text" id="text" name="text" autocomplete="off"
+            ><button>
                 <svg id='search-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
             </div>
+        </div>
+        <!-- model prediction is WIP -->
+        <div id="pred">
+            <p><b><u>Sentimental Analysis Result:</u></b></p>
+            <p id="output"><i>{{text}}</i></p>
+            <p>The review is detected as a positive review.</p>
+            <img src="../static/thumbs_up.jpg" alt="thumbs up">
         </div>
     </form>
 </body>
