@@ -5,7 +5,7 @@ import tensorflow as tf
 import secrets
 
 app = Flask(__name__)
-app.secret_key = 'Lemme try this secret key'
+app.secret_key = secrets.token_hex(16)
 
 # initialising the model and tokenizer
 tokenizer = BertTokenizer.from_pretrained("8CSI/Travel_Sentimental_Analysis")
