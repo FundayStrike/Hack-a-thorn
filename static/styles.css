@@ -11,6 +11,8 @@ h1{
 
 form{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #input-box input{
@@ -50,8 +52,10 @@ button:hover{
 }
 
 #pred{
-    max-width: 75%;
-    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     padding: 10px 40px 10px 40px;
     border: 2px solid black;
@@ -60,6 +64,7 @@ button:hover{
 }
 
 #output{
+    text-align: center;
     height: fit-content;
     border: 3px solid black;
     border-radius: 5px;
@@ -67,4 +72,51 @@ button:hover{
     word-wrap: break-word;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+#summary{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#pos_score{
+    background-color: #99ff99;
+}
+
+#neg_score{
+    background-color: #ff9999;
+}
+
+#score_bar{
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#prev_inputs{
+    float: right;
+    width: 20%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.prev_input{
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.rating{
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 5px;
 }
