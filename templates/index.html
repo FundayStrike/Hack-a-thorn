@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hack-a-thorn</title>
+    <title>SwiftVoyager</title>
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
 </head>
 <body>
-    <h1>Hack-a-thorn</h1>
+    <img src="../static/webapp_icon.png" img="icon" width="100px" height="100px" style="margin-left: auto; margin-right: auto; display: block; margin-bottom: 5px;"/>
     <div id="image-container">
         <img src="../static/city_img1.jpg" alt="city image 1"
         ><img src="../static/city_img2.jpg" alt="city image 2"
@@ -45,6 +45,9 @@
             {{prev_text[i]}}
         </div>
         {% endfor %}
+        {% if not len_loop %}
+            <p style="text-align: center;">No previous results found.</p>
+        {% endif %}
     </div>
         {% if get_pred %}
             <div id="pred">
