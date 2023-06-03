@@ -11,4 +11,6 @@ The AI was created using the TensorFlow software library in Python. The AI uses 
 - - -
 ### Datasets
 - - -
+https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?resource=download
+- - -
 Made by Alexis (Alexis688868) and Bryan (FundayStrike)
